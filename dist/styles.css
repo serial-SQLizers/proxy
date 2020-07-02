@@ -328,3 +328,374 @@ cursor: pointer;
   width: 100%; /* Width in proportion to its parent container*/
 }
 /* END - MODAL */
+/* RELATED PRODUCTS */
+#rpCarousel, #myOutfits h4 {
+  color: rgba(0, 0, 0, 0.70);
+}
+#rpCarousel {
+  margin-bottom: 35px;
+}
+.rp-loading {
+  /* height: 325px;
+  width: 100%; */
+  text-align: center;
+  /* vertical-align: middle; */
+}
+#myOutfits {
+  /* position: relative; */
+}
+/* SETUP ICONS */
+.icon::before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* defining the right font-family/font-face for each style */
+.icon-solid::before,
+.icon-regular::before,
+.icon-light::before {
+  font-family: "Font Awesome 5 Free";
+}
+
+.icon-brand::before {
+  font-family: "Font Awesome 5 Brands";
+}
+/* defining the right weight for each style */
+.icon-solid::before {
+  font-weight: 900;
+}
+
+.icon-regular::before {
+  font-weight: 400;
+}
+
+.rp-container {
+  /* border: 1px solid rgba(0,0,0,.125); */
+  overflow: hidden;
+}
+
+.rp-card {
+  border-radius: .25rem;
+  border: 1px solid rgba(0,0,0,.125);
+  min-width: 147px;
+  /* max-width: 240px; */
+  min-height: 325px;
+  overflow: hidden;
+  /* max-height: 310px; */
+  /* flex: 1; */
+  margin-left: 5px;
+  position: relative;
+}
+.rp-card:hover {
+  background-color: hsla(216, 47%, 87%, 0.20);
+}
+.outfit-card {
+  width: 273px;
+  text-align: center;
+  color: rgba(0,0,0,.5);
+}
+.outfit-card h3 {
+  /* line-height: 310px; */
+  margin-top:100px;
+
+}
+.outfit-card .plus::before {
+  font-size: 40px;
+  content: "\f067";
+  vertical-align: middle;
+
+}
+.outfit-card .plus:hover::before {
+  cursor: pointer;
+  color: rgba(0, 128, 0, 0.5);
+}
+
+.rp-card-image-box {
+  /* width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;*/
+  /* position: absolute; */
+  height:200px;
+  /* width:240px; */
+  overflow: hidden;
+}
+.rp-card-image-box img {
+  /* width: 350px;
+  height: auto; */
+  min-height: 200px;
+  width: 100%;
+}
+.rp-card-body {
+  /* cursor: pointer; */
+  position: absolute;
+  top:205px;
+  padding-left: 5px;
+}
+.rp-card-category {
+  /* margin: 5px 0px; */
+  font-weight: 500;
+}
+.rp-card-category, p, .rp-card-price {
+  font-size: .75rem;
+}
+.rp-card-body h5 {
+  font-size: 14px;
+  font-weight: 700;
+  /* margin-bottom: 0px; */
+}
+p.rp-card-text {
+  margin-bottom: 5px;
+}
+.rp-favorite {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  float: right;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  /* color: hsla(54, 83%, 55%, 0.75); */
+  z-index: 1000;
+  cursor: pointer;
+  /* background-color: #fff; */
+  /* content: "\f005"; */
+  font-size: 20px;
+}
+.star::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f005";
+  color: #fff;
+}
+.rp-favorite i:hover::before {
+  color: hsla(54, 83%, 55%, 1.00);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  /* font-size: 25px; */
+  content: "\f005";
+}
+.rp-favorite i {
+  position: absolute;
+  /* float: left; */
+  content: "\f005";
+  top: 0;
+  left: 0px;
+}
+/* SLICK CAROUSEL THEME */
+
+
+.slick-dots, .slick-next, .slick-prev {
+  position: absolute;
+  display: block;
+  padding: 0
+}
+
+.slick-dots li button:before, .slick-next:before, .slick-prev:before {
+  /* font-family: slick; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.slick-loading .slick-list {
+  background: url(ajax-loader.gif) center center no-repeat #fff
+}
+@charset 'UTF-8';
+/* @font-face {
+  font-family: slick;
+  font-weight: 400;
+  font-style: normal;
+  src: url(fonts/slick.eot);
+  src: url(fonts/slick.eot?#iefix) format('embedded-opentype'), url(fonts/slick.woff) format('woff'), url(fonts/slick.ttf) format('truetype'), url(fonts/slick.svg#slick) format('svg')
+} */
+
+.slick-next, .slick-prev {
+  font-size: 0;
+  line-height: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: 0;
+  background: 0 0;
+}
+
+.slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover {
+  color: transparent;
+  outline: 0;
+  background: 0 0
+}
+
+.slick-next:focus:before, .slick-next:hover:before, .slick-prev:focus:before, .slick-prev:hover:before {
+  opacity: 1
+}
+
+.slick-next.slick-disabled:before, .slick-prev.slick-disabled:before {
+  opacity: .25
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  /* color: #fff */
+  color:#a1a0a0;
+}
+
+.slick-prev {
+  left: -25px
+}
+
+[dir=rtl] .slick-prev {
+  right: -25px;
+  left: auto
+}
+
+.slick-prev:before {
+  content: "\f104";
+  font: 40px/1 'FontAwesome';
+}
+
+.slick-next:before, [dir=rtl] .slick-prev:before {
+  content: "\f105";
+  font: 40px/1 'FontAwesome';
+}
+
+.slick-next {
+  right: -25px
+}
+
+[dir=rtl] .slick-next {
+  right: auto;
+  left: -25px
+}
+
+[dir=rtl] .slick-next:before {
+  content: '\2192'
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px
+}
+
+.slick-dots {
+  bottom: -25px;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: 0;
+  background: 0 0
+}
+
+.slick-dots li button:focus, .slick-dots li button:hover {
+  outline: 0
+}
+
+.slick-dots li button:focus:before, .slick-dots li button:hover:before {
+  opacity: 1
+}
+
+.slick-dots li button:before {
+  /* font-size: 6px; */
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "\f111";
+  /* font: 14px/1 'FontAwesome'; */
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  opacity: .25;
+  color: #7e7e7e
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  /* color: #7e7e7e; */
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/* MODAL */
+/* Background effect. It covers the entire site */
+.modal {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Overlay effect: translucent background: black w/ partial opacity */
+  z-index: 1; /* Overlay effect: positioned over other containers */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  position: fixed; /* Fix position on the top-left corner*/
+  top: 0;
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 80px; /* Location of the content container */
+}
+/* Modal content */
+.modal-content {
+  background-color: white;
+  width: 70%; /* Width in proportion to its parent container*/
+  max-width: 640px; /* Max width where it stops expanding */
+  height: 70%; /* Height in proportion to its parent container */
+  margin: auto; /* Auto margin according to the element width */
+  padding: 10px;
+  border: 1px solid black;
+}
+/* Close button */
+.close {
+ color: #080808;
+ float: right; /* Positioned to the right of the parent container whichever size it is */
+ font-size: 40px;
+ font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* END - MODAL */
+/* MODAL TABLE */
+.modal-container .table {
+  text-align: center;
+}
+.fa-check {
+  color: green;
+}~
