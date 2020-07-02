@@ -4,18 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "updateServiceOne": "cd productDetails && git checkout && git pull",
-    "updateServiceTwo": "cd QnA && git checkout && git pull",
-    "updateServiceThree": "cd related-products && git checkout && git pull",
-    "updateServiceFour": "cd reviewsService && git checkout && git pull",
+    "updateServiceOne": "cd ../productDetails && git checkout && git pull",
+    "updateServiceTwo": "cd ../QnA && git checkout && git pull",
+    "updateServiceThree": "cd ../related-products && git checkout && git pull",
+    "updateServiceFour": "cd ../reviewsService && git checkout && git pull",
     "updateAll": "npm run updateServiceOne && npm run updateServiceTwo && npm run updateServiceThree && npm run updateServiceFour",
-    "start": "concurrently --kill-others-on-fail \"nodemon\" \"cd productDetails && npm start\" \"cd QnA && npm start\" \"cd related-products && npm start\" \"cd reviewsService && npm start\""
+    "start": "concurrently --kill-others-on-fail \"nodemon\" \"cd ../productDetails && npm start\" \"cd ../QnA && npm start\" \"cd ../related-products && npm start\" \"cd ../reviewsService && npm start\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-jest": "^26.0.1",
+    "babel-preset-airbnb": "^5.0.0",
+    "bootstrap": "^4.5.0",
     "concurrently": "^5.2.0",
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "sass": "^1.26.8"
   }
 }

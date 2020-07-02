@@ -1,0 +1,1225 @@
+/* ***** Product Description ***** */
+/* font awesome stars use these exact classNames */
+.stars-outer {
+  position: relative;
+  display: inline-block;
+}
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+.stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ccc;
+}
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #f8ce0b;
+}
+/* I took the liberty of adding a header and footer --> below is for our logo in the footer */
+footer img {
+  height: 200px;
+}
+/* ***** End of Product Description ***** */
+
+
+/* #qna {
+  background-color: blue;
+} */
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .fa {
+  position: absolute;
+  margin-top: 5px;
+  padding: 10px;
+  pointer-events: none;
+  font-size:18px;
+}
+
+/* align glyph */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+.qa-search {
+  border-radius: 0;
+  width: 100%;
+  height: 3em;
+  font-size:15px;
+  font-weight: bold;
+  padding:25px;
+}
+
+.qa-title {
+font-size: 15px;
+padding-bottom: 15px;
+}
+.qa-title2 {
+  font-size: small;
+  font-weight: bold;
+  margin: 15px
+  }
+
+
+#qnaApp {
+  margin: 30px;
+}
+.questionbody{
+  font-weight: bold;
+}
+
+.qa-thumbnails{
+  position:absolute;
+}
+.qa-thumbnail {
+  width: auto;
+  height: 100px;
+  margin:10px;
+  position:relative;
+}
+
+.qa-imgs{
+
+    width: 150px;
+    height:100px;
+    border: 1px solid black;
+}
+
+
+.qa-fst-container{
+  height: 4em;
+  margin-bottom: 10px;
+}
+.qa-fst-btn{
+  margin-top: 10px;
+  margin-left:15px;
+  height: 3em;
+
+}
+.qa-button-add {
+  height: 3em;
+  margin-left:15px;
+  flex:end;
+}
+
+.qnsA{
+  padding-right: 15px;
+  width: 10px;
+  font-weight: bold;
+  display: inline-block;
+  height: 100%;
+
+}
+
+
+.qSpan{
+  width: 95%;
+  display: inline-block;
+  font-weight: bold;
+
+}
+
+.ansA{
+  margin-right: 10px;
+  width: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+.aSpan{
+  width: 95%;
+  display: inline-block;
+}
+
+
+.qa-button-more {
+  height: 3em;
+}
+
+.qa-ansuser {
+  padding: 5px 0px 15px 30px;
+  /* padding-top: 5px; */
+  /* padding-bottom: 15px; */
+  font-size: smaller;
+
+}
+
+.qa-question1{
+  position:relative;
+}
+
+.qa-question2{
+  position: absolute;
+}
+
+.questionList{
+  padding-top: 15px;
+  max-height: 600px;
+}
+
+.qa-loadAnswers{
+  font-size: small;
+  font-weight: bold;
+  margin: 0 0 15px 15px;
+}
+
+.qa-loadAnswers:hover{
+text-decoration-line: underline;
+cursor: pointer;
+}
+
+.qaaddAns:hover{
+  text-decoration-line: underline;
+  cursor: pointer;
+  font-weight: bold;
+  }
+
+.qaformBtn{
+  align-self:flex-end;
+
+}
+
+.qaformSpan{
+  display: block;
+  padding:0 1em 0 1em;
+}
+
+.qaformdiv{
+  justify-content: flex-start;
+}
+#quesbody{
+  height:150px;
+  width: 100%;
+  box-sizing:border-box;
+}
+
+#quesnname{
+  width: 100%;
+  box-sizing:border-box;
+}
+
+#quesemail{
+  width: 100%;
+  box-sizing:border-box;
+}
+
+#ansbody{
+  height:150px;
+  width: 100%;
+  box-sizing:border-box;
+}
+
+#ansnname{
+  width: 100%;
+  box-sizing:border-box;
+}
+
+#ansemail{
+  width: 100%;
+  box-sizing:border-box;
+}
+
+.qna-form{
+  width: 100%;
+  font-weight: bold;
+  margin: 20px 0 5px 0;
+}
+.qna-form-b{
+  margin-top: 5px;
+  width: 100%;
+
+  margin-bottom:10px;
+}
+
+.qnaformclose {
+  color: #080808;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: right;
+  height: 20px;
+  z-index: 1;
+ }
+
+ .qa-row-AnsUser{
+   width: 100%;
+
+ }
+ .qa-AnsUser{
+   text-align: right;
+   font-size:smaller;
+   width: 100%;
+ }
+ .qa-QuesUser{
+  text-align: right;
+  font-size:smaller;
+  width: 100%;
+  display: inline-block;
+}
+
+ .qnahelpful:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+  font-weight: bold;
+
+    }
+
+    .qnareport:hover{
+      text-decoration-line: underline;
+      cursor: pointer;
+    font-weight: bold;
+
+      }
+
+
+/* MODAL */
+/* Background effect. It covers the entire site */
+
+.qnamodal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Overlay effect: translucent background: black w/ partial opacity */
+  z-index: 1; /* Overlay effect: positioned over other containers */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  position: fixed; /* Fix position on the top-left corner*/
+  top: 0;
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 80px; /* Location of the content container */
+}
+/* Modal content */
+
+.qnaMC{
+    background-color: white;
+  /* width: 70%; Width in proportion to its parent container */
+  max-width: 640px; /* Max width where it stops expanding */
+
+  /* height: 70%; Height in proportion to its parent container */
+  margin: auto; /* Auto margin according to the element width */
+  padding: 10px;
+  border: 1px solid black;
+}
+/* Close button */
+.qnaclose {
+ color: #080808;
+ float: right; /* Positioned to the right of the parent container whichever size it is */
+ font-size: 40px;
+ font-weight: bold;
+}
+.qnaclose:hover,
+.qnaclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.qnamodal-img {
+  width: 100%; /* Width in proportion to its parent container*/
+}
+/* END - MODAL */
+/* RELATED PRODUCTS */
+#rpCarousel, #myOutfits h4 {
+  color: rgba(0, 0, 0, 0.70);
+}
+#rpCarousel {
+  margin-bottom: 35px;
+}
+.rp-loading {
+  /* height: 325px;
+  width: 100%; */
+  text-align: center;
+  /* vertical-align: middle; */
+}
+#myOutfits {
+  /* position: relative; */
+}
+/* SETUP ICONS */
+.icon::before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* defining the right font-family/font-face for each style */
+.icon-solid::before,
+.icon-regular::before,
+.icon-light::before {
+  font-family: "Font Awesome 5 Free";
+}
+
+.icon-brand::before {
+  font-family: "Font Awesome 5 Brands";
+}
+/* defining the right weight for each style */
+.icon-solid::before {
+  font-weight: 900;
+}
+
+.icon-regular::before {
+  font-weight: 400;
+}
+
+.rp-container {
+  /* border: 1px solid rgba(0,0,0,.125); */
+  overflow: hidden;
+}
+
+.rp-card {
+  border-radius: .25rem;
+  border: 1px solid rgba(0,0,0,.125);
+  min-width: 147px;
+  /* max-width: 240px; */
+  min-height: 325px;
+  overflow: hidden;
+  /* max-height: 310px; */
+  /* flex: 1; */
+  margin-left: 5px;
+  position: relative;
+}
+.rp-card:hover {
+  background-color: hsla(216, 47%, 87%, 0.20);
+}
+.outfit-card {
+  width: 273px;
+  text-align: center;
+  color: rgba(0,0,0,.5);
+}
+.outfit-card h3 {
+  /* line-height: 310px; */
+  margin-top:100px;
+
+}
+.outfit-card .plus::before {
+  font-size: 40px;
+  content: "\f067";
+  vertical-align: middle;
+
+}
+.outfit-card .plus:hover::before {
+  cursor: pointer;
+  color: rgba(0, 128, 0, 0.5);
+}
+
+.rp-card-image-box {
+  /* width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;*/
+  /* position: absolute; */
+  height:200px;
+  /* width:240px; */
+  overflow: hidden;
+}
+.rp-card-image-box img {
+  /* width: 350px;
+  height: auto; */
+  min-height: 200px;
+  width: 100%;
+}
+.rp-card-body {
+  /* cursor: pointer; */
+  position: absolute;
+  top:205px;
+  padding-left: 5px;
+}
+.rp-card-category {
+  /* margin: 5px 0px; */
+  font-weight: 500;
+}
+.rp-card-category, p, .rp-card-price {
+  font-size: .75rem;
+}
+.rp-card-body h5 {
+  font-size: 14px;
+  font-weight: 700;
+  /* margin-bottom: 0px; */
+}
+p.rp-card-text {
+  margin-bottom: 5px;
+}
+.rp-favorite {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  float: right;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  /* color: hsla(54, 83%, 55%, 0.75); */
+  z-index: 1000;
+  cursor: pointer;
+  /* background-color: #fff; */
+  /* content: "\f005"; */
+  font-size: 20px;
+}
+.star::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f005";
+  color: #fff;
+}
+.rp-favorite i:hover::before {
+  color: hsla(54, 83%, 55%, 1.00);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  /* font-size: 25px; */
+  content: "\f005";
+}
+.rp-favorite i {
+  position: absolute;
+  /* float: left; */
+  content: "\f005";
+  top: 0;
+  left: 0px;
+}
+/* SLICK CAROUSEL THEME */
+
+
+.slick-dots, .slick-next, .slick-prev {
+  position: absolute;
+  display: block;
+  padding: 0
+}
+
+.slick-dots li button:before, .slick-next:before, .slick-prev:before {
+  /* font-family: slick; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.slick-loading .slick-list {
+  background: url(ajax-loader.gif) center center no-repeat #fff
+}
+@charset 'UTF-8';
+/* @font-face {
+  font-family: slick;
+  font-weight: 400;
+  font-style: normal;
+  src: url(fonts/slick.eot);
+  src: url(fonts/slick.eot?#iefix) format('embedded-opentype'), url(fonts/slick.woff) format('woff'), url(fonts/slick.ttf) format('truetype'), url(fonts/slick.svg#slick) format('svg')
+} */
+
+.slick-next, .slick-prev {
+  font-size: 0;
+  line-height: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: 0;
+  background: 0 0;
+}
+
+.slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover {
+  color: transparent;
+  outline: 0;
+  background: 0 0
+}
+
+.slick-next:focus:before, .slick-next:hover:before, .slick-prev:focus:before, .slick-prev:hover:before {
+  opacity: 1
+}
+
+.slick-next.slick-disabled:before, .slick-prev.slick-disabled:before {
+  opacity: .25
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  /* color: #fff */
+  color:#a1a0a0;
+}
+
+.slick-prev {
+  left: -25px
+}
+
+[dir=rtl] .slick-prev {
+  right: -25px;
+  left: auto
+}
+
+.slick-prev:before {
+  content: "\f104";
+  font: 40px/1 'FontAwesome';
+}
+
+.slick-next:before, [dir=rtl] .slick-prev:before {
+  content: "\f105";
+  font: 40px/1 'FontAwesome';
+}
+
+.slick-next {
+  right: -25px
+}
+
+[dir=rtl] .slick-next {
+  right: auto;
+  left: -25px
+}
+
+[dir=rtl] .slick-next:before {
+  content: '\2192'
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px
+}
+
+.slick-dots {
+  bottom: -25px;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: 0;
+  background: 0 0
+}
+
+.slick-dots li button:focus, .slick-dots li button:hover {
+  outline: 0
+}
+
+.slick-dots li button:focus:before, .slick-dots li button:hover:before {
+  opacity: 1
+}
+
+.slick-dots li button:before {
+  /* font-size: 6px; */
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "\f111";
+  /* font: 14px/1 'FontAwesome'; */
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  opacity: .25;
+  color: #7e7e7e
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  /* color: #7e7e7e; */
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/* MODAL */
+/* Background effect. It covers the entire site */
+.modal {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Overlay effect: translucent background: black w/ partial opacity */
+  z-index: 1; /* Overlay effect: positioned over other containers */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  position: fixed; /* Fix position on the top-left corner*/
+  top: 0;
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 80px; /* Location of the content container */
+}
+/* Modal content */
+.modal-content {
+  background-color: white;
+  width: 70%; /* Width in proportion to its parent container*/
+  max-width: 640px; /* Max width where it stops expanding */
+  height: 70%; /* Height in proportion to its parent container */
+  margin: auto; /* Auto margin according to the element width */
+  padding: 10px;
+  border: 1px solid black;
+}
+/* Close button */
+.close {
+ color: #080808;
+ float: right; /* Positioned to the right of the parent container whichever size it is */
+ font-size: 40px;
+ font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* END - MODAL */
+/* MODAL TABLE */
+.modal-container .table {
+  text-align: center;
+}
+.fa-check {
+  color: green;
+}
+
+
+/* REVIEWS SERVICE */
+
+* {
+  font-family: helvetica;
+}
+
+/* ***STAR STLYING FOR EACH REVIEW*** */
+
+.starsParent {
+  position: relative;
+  margin: 5% 0 5% 0;
+}
+
+.stars-outer {
+  position: absolute;
+  top: -10px;
+  display: block;
+  font-size: 13px;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #ccc;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #78b877;
+}
+
+.reviewBody {
+  margin: auto;
+  font-size: 14px;
+}
+
+.summary {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 1% 0px 2.5% 0px;
+}
+
+.checkmark {
+  width: 2%;
+  height: 2%;
+  display: inline-block;
+}
+
+.userName-Date {
+  padding: 10px 0 0;
+}
+
+.checkMark-userName-date-stars {
+  text-align: right;
+  margin: 0 0 2%;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.helpfulness{
+  margin: 10px 0 0px 0;
+  display: block;
+  padding: 5px 0 0 0;
+  font-size: 12px;
+}
+
+h2 {
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+/* this is the horizontal line for after each review */
+
+hr {
+  display: block;
+  height: 1.0px;
+  border: 0;
+  border-top: 1.2px solid #ccc;
+  margin: 1em 0 2.5em;
+  padding: 0;
+  width: 100%;
+}
+
+/* ***SIDEBAR*** */
+
+.sidebarTitle {
+  margin: 5px auto 40px auto;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.sidebarRecommend {
+  font-size: 12px;
+  white-space: nowrap;
+  margin: 0 0px 0px 0px;
+}
+
+.sidebarStarNum {
+  position: relative;
+  top: -30px;
+  font-size: 60px;
+  margin: 0 0 0 0;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: text-top;
+  margin: 0 30px;
+}
+
+.sidebarAndRatings {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+/* Sidebar Stars */
+
+.sb-starsParent {
+  position: relative;
+  margin: 0px 0px 0px 0px;
+}
+
+.sb-stars-outer {
+  position: absolute;
+  top: -10px;
+  left: 90px;
+  display: block;
+  font-size: 13px;
+}
+
+.sb-stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  font-size: 13px;
+  margin: 0 0 0px 0;
+}
+
+.sb-stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #ccc;
+}
+
+.sb-stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #78b877;
+}
+
+/* STAR BARS (PRODUCT BREAKDOWN) */
+
+
+/*the collection of star labels */
+.sb-star-labels {
+  font-size: 15px;
+  margin: 7px 0 7px 0px;
+  position: absolute;
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+/*each individual label i.e. 5stars: */
+
+.starlabel {
+  margin: 0px 0 5px 0;
+  cursor: pointer;
+}
+
+/* This is just the styling for the bars */
+.sb-star-breakdown {
+  height: 7px;
+  display: absolute;
+background: #78b877;
+  padding: 0px 12px;
+  /* newstuff */
+  margin: 5px 0 20px 0;
+  position: inline-block;
+}
+
+.bars-outer {
+  position: relative;
+  white-space: nowrap;
+  width: 80%;
+  background: #e4e4e4;
+  /* padding: 0px 12px; */
+  margin: 10px 0px 0px 53px;
+  top: 15px;
+}
+
+/* SORT */
+
+.sort-container {
+  margin: 80px 0 40px 0;
+  font-weight: bold;
+}
+
+.sort-text > a {
+  color: black;
+}
+
+/* filter buttons */
+
+.star-button-title {
+  text-align: center;
+  margin: 10% 0px;
+  font-size: 14px;
+}
+
+.star-filter-buttons {
+  /* display: none;
+  width: 220px;
+  margin: 5px 0;
+  padding: .375rem;
+  background-color: white;
+  color: black;
+  border: .5px solid black;
+  border-radius: .25rem;
+  line-height: 1.5;
+  font-size: .75rem;
+  padding: 4%;
+  text-transform: uppercase; */
+  width: 100%;
+  margin: 0px 3% 0px 10%;
+  font-size: .75rem;
+  padding: .75rem .75rem;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  text-align: center;
+  transition: all 0.5s ease;
+
+}
+
+.star-filter-buttons:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+/* more review / add review buttons */
+
+.more-reviews-button {
+  margin: 0px 0px 50px 2.5px;
+  line-height: 1.5;
+  font-size: .75rem;
+  padding: .75rem .75rem;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  text-align: center;
+  /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18); */
+}
+
+.more-reviews-button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.more-reviews-button:focus {
+  outline: none;
+}
+
+.btn, .btn-primary {
+  margin: 0px 3% 0px 20%;
+  font-size: .75rem;
+  padding: .75rem .75rem;
+  line-height: 1.5;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.btn:hover, .btn-primary:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+
+.add-review-module {
+  display: inline-block;
+  margin: 0 0 15% 0;
+}
+
+.minimum-message > div {
+  font-size: .75rem;
+  margin: 15px 0px 0px 0px;
+}
+
+
+/* MODAL STYLING */
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+    max-width:1024px;
+  }
+}
+
+@media (min-width: 1025px) {
+.modal-xl {
+   width: 60%;
+   max-width:1400px;
+}
+}
+
+/* image modals */
+
+@media (min-width: 768px) {
+  .modal-lg {
+    width: 100%;
+    height: 100%;
+    max-width:1024px;
+  }
+}
+
+@media (min-width: 1025px) {
+.modal-lg {
+   width: 100%;
+   height: 100%;
+   max-width:1400px;
+}
+}
+
+@media (min-width: 1401px) {
+  .modal-lg {
+     width: 100%;
+     height: 100%;
+     max-width:2200px;
+  }
+}
+
+.rating {
+cursor: pointer;
+}
+
+.add-rating-stars .rating-star {
+display: inline-block;
+position: relative;
+padding-right: 5px;
+margin-left: -5px;
+color: #78b877;
+}
+.add-rating-stars .selected:before {
+content: '\f005';
+}
+
+/* button styling */
+
+
+.btn-secondary {
+  margin: 2.5px;
+}
+
+.modal-header > .modal-body, .modal-title, .close-button, .submit-button {
+  margin: 0px 20px 0px 20px;
+}
+
+.modal-header > .modal-title {
+  font-size: 30px;
+}
+
+.review-message-title, .input-group-text {
+  display: block;
+  white-space: nowrap;
+}
+
+.modal-header > .modal-subtitle {
+  display: block;
+  font-size: 20px;
+}
+
+.YesNoRadio-parent {
+  display: absolute;
+}
+
+#noRadio, #yesRadio {
+  display: relative;
+  left: 150px;
+}
+
+.email-privacy {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  margin: 0px;
+}
+
+
+.star-explanation {
+  display: inline-block;
+  left: 300px;
+}
+
+#dropdownMenuButton {
+  margin: 3% 0 0 0;
+  padding: 1%;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+.attribute-graph {
+  margin: 30% 0px 0px 0px;
+  position: relative;
+}
+
+/* the display: flex and flex: 1 attribute allow this outer bar to size itself flexibly to the child */
+.attr-outer {
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  background: #e4e4e4;
+  /* padding: 0px 12px; */
+  margin: 0px 0px 0px 53px;
+  top: 15px;
+  left: -25%;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+
+}
+
+/* the left amount is what will slide the triangle over */
+
+.attr-breakdown-comfort, .attr-breakdown-fit, .attr-breakdown-quality, .attr-breakdown-length, .attr-breakdown-size, .attr-breakdown-width {
+  position: relative;
+  width: 5%;
+  z-index: 1;
+  height: 100%;
+  /* left: 25%; */
+}
+
+.attr-label {
+  position: relative;
+  /* display: block; */
+  /* top: 100px; */
+  z-index: 1;
+  margin: 20px 0px -10px 0px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.left-to-right-explanation {
+  position: relative;
+  margin: 20px 0px -20px 0px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 15px 0px 0px 0px;
+  font-weight: 200;
+  font-size: 13px;
+}
+
+.too-small {
+  margin: 0px 30px 0px 0px;
+}
+
+.too-wide {
+  margin: 0px 0px 0px 30px;
+}
+
+/* end of REVIEW SERVICE CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
