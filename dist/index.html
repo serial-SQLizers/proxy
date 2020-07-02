@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Maze Proxy</title>
-  </head>
-  <body>
-    <!-- Each one of these divs lines up with what the service is expecting in their ReactDOM.render -->
-    <div id="details"></div>
-    <div id="related"></div>
-    <div id="qna"></div>
-    <div id="reviews"></div>
 
-    <!-- Making get requests to each service for their BUNDLE, note the endpoint -->
-    <script crossorigin src="http://localhost:3001/bundle.js"></script>
-    <script crossorigin src="http://localhost:3002/bundle.js"></script>
-    <script crossorigin src="http://localhost:3003/bundle.js"></script>
-    <script crossorigin src="http://localhost:3004/bundle.js"></script>
-    <!-- When we run the above code it will run ReactDOM.render() for each service's
+<head>
+  <meta charset="utf-8" />
+  <title>Maze Proxy</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+  <!-- Each one of these divs lines up with what the service is expecting in their ReactDOM.render -->
+  <div id="details"></div>
+  <div id="related"></div>
+  <div id="qna"></div>
+  <div id="reviews"></div>
+
+  <!-- Making get requests to each service for their BUNDLE, note the endpoint -->
+  <script crossorigin src="http://localhost:3001/bundle.js"></script>
+  <script crossorigin src="http://localhost:3002/bundle.js"></script>
+  <script crossorigin src="http://localhost:3003/bundle.js"></script>
+  <script crossorigin src="http://localhost:3004/bundle.js"></script>
+  <!-- When we run the above code it will run ReactDOM.render() for each service's
         bundle which is how we get each service onto the dom -->
-  </body>
+</body>
+
 </html>
