@@ -840,12 +840,17 @@ p.rp-card-text {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  color: #78b877;
+  color: #f8ce0b;
 }
 
 .reviewBody {
   margin: auto;
   font-size: 14px;
+}
+
+
+.review-container {
+  width: 100%;
 }
 
 .summary {
@@ -922,19 +927,23 @@ hr {
 }
 
 #sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  padding: 20px;
-  display: inline-block;
+  min-width: 20%;
+  max-width: 20%;
+  margin: 0px 5% 0px 0px;
+  /* padding: 20px; */
+  /* display: inline-block; */
   vertical-align: text-top;
-  margin: 0 30px;
+  /* margin: 0 30px; */
 }
 
 .sidebarAndRatings {
   width: 100%;
-  display: flex;
+  /* display: inline-block; */
+  /* NEED MEDDIA QUERY HERE? */
   align-items: stretch;
 }
+
+/* display flex works great for PC but not mobile */
 
 /* Sidebar Stars */
 
@@ -973,7 +982,7 @@ hr {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  color: #78b877;
+  color: #f8ce0b;
 }
 
 /* STAR BARS (PRODUCT BREAKDOWN) */
@@ -1185,7 +1194,7 @@ display: inline-block;
 position: relative;
 padding-right: 5px;
 margin-left: -5px;
-color: #78b877;
+color: #f8ce0b;
 }
 .add-rating-stars .selected:before {
 content: '\f005';
@@ -1259,8 +1268,8 @@ content: '\f005';
   width: 100%;
   background: #e4e4e4;
   /* padding: 0px 12px; */
-  margin: 0px 0px 0px 53px;
-  top: 15px;
+  margin: 0px 0px 0px 26%;
+  top: 10px;
   left: -25%;
   overflow: hidden;
   display: flex;
@@ -1272,7 +1281,7 @@ content: '\f005';
 
 .attr-breakdown-comfort, .attr-breakdown-fit, .attr-breakdown-quality, .attr-breakdown-length, .attr-breakdown-size, .attr-breakdown-width {
   position: relative;
-  width: 5%;
+  width: 4%;
   z-index: 1;
   height: 100%;
   /* left: 25%; */
@@ -1283,29 +1292,28 @@ content: '\f005';
   /* display: block; */
   /* top: 100px; */
   z-index: 1;
-  margin: 20px 0px -10px 0px;
+  margin: 3% 0px -5% 0px;
   text-align: left;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .left-to-right-explanation {
   position: relative;
-  margin: 20px 0px -20px 0px;
   text-align: center;
   font-weight: 300;
   font-size: 14px;
-  margin: 15px 0px 0px 0px;
-  font-weight: 200;
+  margin: 10px 0px 0px 0px;
+  font-weight: 150;
   font-size: 13px;
 }
 
 .too-small {
-  margin: 0px 30px 0px 0px;
+  margin: 0px 13% 0px 0px;
 }
 
 .too-wide {
-  margin: 0px 0px 0px 30px;
+  margin: 0px 0px 0px 15%;
 }
 
 .reviewsSpacer {
