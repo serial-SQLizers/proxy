@@ -153,8 +153,10 @@ padding-bottom: 15px;
   /* padding-top: 5px; */
   /* padding-bottom: 15px; */
   font-size: smaller;
-
 }
+.qnaSpacer{
+  margin:auto;
+  min-width: 20px;}
 
 .qa-question1{
   position:relative;
