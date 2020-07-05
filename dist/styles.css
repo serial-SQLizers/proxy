@@ -806,6 +806,10 @@ p.rp-card-text {
   font-family: helvetica;
 }
 
+#reviews {
+  margin: 15% 0px 5% 0px;
+}
+
 /* ***STAR STLYING FOR EACH REVIEW*** */
 
 .starsParent {
@@ -907,6 +911,10 @@ hr {
 
 /* ***SIDEBAR*** */
 
+#sidebar {
+  margin-right: 20%;
+}
+
 .sidebarTitle {
   margin: 5px auto 40px auto;
   text-transform: uppercase;
@@ -915,7 +923,7 @@ hr {
 
 .sidebarRecommend {
   font-size: 12px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   margin: 0 0px 0px 0px;
 }
 
@@ -926,15 +934,6 @@ hr {
   margin: 0 0 0 0;
 }
 
-#sidebar {
-  min-width: 20%;
-  max-width: 20%;
-  margin: 0px 5% 0px 0px;
-  /* padding: 20px; */
-  /* display: inline-block; */
-  vertical-align: text-top;
-  /* margin: 0 30px; */
-}
 
 .sidebarAndRatings {
   width: 100%;
@@ -1295,7 +1294,7 @@ content: '\f005';
   margin: 3% 0px -5% 0px;
   text-align: left;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .left-to-right-explanation {
@@ -1305,7 +1304,7 @@ content: '\f005';
   font-size: 14px;
   margin: 10px 0px 0px 0px;
   font-weight: 150;
-  font-size: 13px;
+  font-size: .35em;
 }
 
 .too-small {
